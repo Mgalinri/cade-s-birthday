@@ -1,0 +1,50 @@
+html, body{
+    margin: 0;
+    height: 100%;
+}
+.main-box{
+    height: 100%;
+    background-image: url("dirt_background.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.loading-bar{
+    height: 10px;
+    width: 300px;
+    background-color: rgba(192,192,192,0.7);
+    
+   
+    box-shadow: black 0px 0px 1px;
+ 
+}
+.progress{
+    height: 10px;
+    border: solid #81ff81;
+    background-color: #81ff81;
+    animation: progress 10s;
+    border-radius: 0%
+    
+}
+@keyframes progress {
+    0%{width: -2px;  }
+    25%{width: 50px;}
+    50%{width: 100px;}
+    70%{width: 200px;}
+    100%{width: 300px;}
+
+}
+
+h1{
+  color: white;
+  font-family:'minecraft-webfont';
+  letter-spacing: 5px;
+  font-size: 35px;
+  text-shadow: 4px 2px rgba(192,192,192,0.7);
+}
+@font-face {
+    font-family: 'minecraft-webfont';
+    src: url('webfontkit-20230516-005600/minecraft-webfont.woff2');
+}

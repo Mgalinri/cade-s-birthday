@@ -1,0 +1,65 @@
+html, body{
+    margin: 0;
+    height: 100%;
+}
+.card-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .card-container {
+    -ms-overflow-style: none;  /* IE and Edge */
+  
+  }
+.main-box{
+    height: 100%;
+    background-image: url("card-background.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    object-fit: contain;
+}
+.card-container{
+    background-color: rgba(0,0,0, 0.8);
+    height: 600px;
+    width: 600px;
+    overflow: auto;
+    
+
+}
+.grey-container{
+    border: 20px solid #c6c6c6;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: 50px solid  #c6c6c6 ;
+    box-shadow:  -5px -3px white, black -8px -5px, inset 6px 6px #e9e9e9, #4d4d50 7px 7px, black 10px 10px;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+p{
+    color: white;
+    padding:10px;
+    margin-left:10px;
+    font-family:'minecraft-webfont';
+    letter-spacing: 5px;
+    font-size: 20px;
+  
+}
+@font-face {
+    font-family: 'minecraft-webfont';
+    src: url('webfontkit-20230516-005600/minecraft-webfont.woff2');
+}
+.main-text{
+   position: absolute;
+   font-size: 20px;
+   top:-50px;
+   color:#0f0a0a ;
+}
+iframe{
+    display: none;
+}
